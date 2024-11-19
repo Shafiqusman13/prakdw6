@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuaca Jakarta dengan WeatherAPI</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: #f0f4f8;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 20px;
+            color: #007bff;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #555;
+        }
+
+        .weather-info,
+        .forecast {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .weather-info p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .forecast {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .day {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 150px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .day h4 {
+            font-size: 20px;
+            color: #333;
+        }
+
+        .day img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .day p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        #current-weather {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Cuaca di Jakarta</h1>
+    <div id="current-weather" class="weather-info">
+        <!-- Cuaca hari ini akan ditampilkan di sini -->
+    </div>
+
+    <h2>Ramalan Cuaca 7 Hari ke Depan</h2>
+    <div id="weather-forecast" class="forecast">
+        <!-- Ramalan cuaca akan ditampilkan di sini -->
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
